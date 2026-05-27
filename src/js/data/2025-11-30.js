@@ -41,7 +41,7 @@ dataSet[dataSetVersion].options = [
     name: "Expanded Releases",
     key: "bonus",
     tooltip: "Check these to include non-mainline releases.",
-    checked: false,
+    checked: true,
     sub: [ { name: "Early Pre-Album Tracks", key: "PAT" }, 
            { name: "The Gouster", key: "Gouster" }, 
            { name: "Absolute Beginners", key: "AB" }, 
