@@ -34,7 +34,7 @@ dataSet[dataSetVersion].options = [
       { name: "Heathen", key: "Heathen" },
       { name: "Reality", key: "Reality" },
       { name: "The Next Day", key: "TND" },
-      { name: "★", key: "blackstar" },
+      { name: "★", key: "blackstar" }
     ]
   },
   {
@@ -52,7 +52,7 @@ dataSet[dataSetVersion].options = [
            { name: "The Nomad Soul", key: "Nomad" },
            { name: "Toy", key: "Toy" },
            { name: "Never Let Me Down (2008)", key: "NLMD08" },
-           { name: "The Next Day Extra EP", key: "TNDEE" },
+           { name: "The Next Day Extra EP", key: "TNDEE" }
     ]
   },
   {
