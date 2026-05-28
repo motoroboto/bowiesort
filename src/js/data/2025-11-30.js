@@ -63,20 +63,27 @@ dataSet[dataSetVersion].options = [
       { name: "The Next Day Extra EP", key: "TNDEE", checked: false },
     ],
   },
+
   {
     name: "Remove Duplicates",
-    key: "duplicates",
+    key: "duplicate",
     tooltip:
       "This will remove any songs that appear on two releases in basically the same form.",
   },
   {
     name: "Remove Covers",
-    key: "covers",
+    key: "cover",
     tooltip: "Check this to remove all covers.",
   },
   {
+    name: "Bonus Tracks",
+    key: "bside",
+    tooltip: "This will include all bonus tracks for any slected albums",
+    checked: false,
+  },
+  {
     name: "Remove Instrumentals",
-    key: "instrumentals",
+    key: "instrumental",
     tooltip: "Check this to remove all instrumentals.",
     checked: false,
   },
@@ -212,384 +219,388 @@ dataSet[dataSetVersion].songData = [
     },
   },
   {
-    name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    name: "The Width of A Circle",
+    img: "tmwstw.jpg",
     opts: {
       albums: ["TMWStW"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    name: "All the Madmen",
+    img: "tmwstw.jpg",
     opts: {
       albums: ["TMWStW"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    name: "Changes",
+    img: "hd.jpg",
     opts: {
       albums: ["HD"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    name: "Oh! You Pretty Things",
+    img: "hd.jpg",
     opts: {
       albums: ["HD"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    name: "Five Years",
+    img: "zs.jpg",
     opts: {
       albums: ["ZS"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    name: "Velvet Goldmine",
+    img: "zs.jpg",
     opts: {
       albums: ["ZS"],
       bonus: [],
+      bside: true,
     },
   },
   {
-    name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    name: "Watch That Man",
+    img: "as.jpg",
     opts: {
       albums: ["AS"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    name: "Aladdin Sane (1913-1938-197?)",
+    img: "as.jpg",
     opts: {
       albums: ["AS"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    name: "Rosalyn",
+    img: "pinups.jpg",
     opts: {
       albums: ["PU"],
       bonus: [],
+      cover: true,
     },
   },
   {
-    name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    name: "Here Comes the Night",
+    img: "pinups.jpg",
     opts: {
       albums: ["PU"],
       bonus: [],
+      cover: true,
     },
   },
   {
-    name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    name: "Future Legend",
+    img: "dd.jpg",
     opts: {
       albums: ["DD"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    name: "Diamond Dogs",
+    img: "dd.jpg",
     opts: {
       albums: ["DD"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    name: "Young Americans",
+    img: "ya.jpg",
     opts: {
       albums: ["YA"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    name: "Win",
+    img: "ya.jpg",
     opts: {
       albums: ["YA"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    name: "Station to Station",
+    img: "sts.jpg",
     opts: {
       albums: ["StS"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    name: "Golden Years",
+    img: "sts.jpg",
     opts: {
       albums: ["StS"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    name: "Speed of Life",
+    img: "low.jpg",
+    opts: {
+      albums: ["Low"],
+      bonus: [],
+      instrumental: true,
+    },
+  },
+  {
+    name: "Breaking Glass",
+    img: "low.jpg",
     opts: {
       albums: ["Low"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 2",
-    img: "TMWStW.jpg",
-    opts: {
-      albums: ["Low"],
-      bonus: [],
-    },
-  },
-  {
-    name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    name: "Beauty and the Beast",
+    img: "heroes.jpg",
     opts: {
       albums: ["Heroes"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    name: "Joe the Lion",
+    img: "heroes.jpg",
     opts: {
       albums: ["Heroes"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    name: "Fantastic Voyage",
+    img: "lodger.jpg",
     opts: {
       albums: ["Lodger"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    name: "African Night Fright",
+    img: "lodger.jpg",
     opts: {
       albums: ["Lodger"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    name: "It's No Game (No. 1)",
+    img: "smasc.jpg",
     opts: {
       albums: ["SMaSC"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    name: "Up The Hill Backwards",
+    img: "smasc.jpg",
     opts: {
       albums: ["SMaSC"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    name: "Modern Love",
+    img: "dance.jpg",
     opts: {
       albums: ["Dance"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    name: "China Girl",
+    img: "dance.jpg",
     opts: {
       albums: ["Dance"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    name: "Loving the Alien",
+    img: "tonight.jpg",
     opts: {
       albums: ["Tonight"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    name: "Don't Look Down",
+    img: "tonight.jpg",
     opts: {
       albums: ["Tonight"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    name: "Day-In Day-Out",
+    img: "nlmd.jpg",
     opts: {
       albums: ["NLMD"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    name: "Time Will Crawl",
+    img: "nlmd.jpg",
     opts: {
       albums: ["NLMD"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    name: "The Wedding",
+    img: "btwn.jpg",
     opts: {
       albums: ["BTWN"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    name: "You've Been Around",
+    img: "btwn.jpg",
     opts: {
       albums: ["BTWN"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    name: "Buddha of Suburbia",
+    img: "tbos.jpg",
     opts: {
       albums: ["TBoS"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    name: "Sex and the Church",
+    img: "tbos.jpg",
     opts: {
       albums: ["TBoS"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    name: "Leon Takes Us Outside",
+    img: "outside.jpg",
     opts: {
       albums: ["Outside"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    name: "Outside",
+    img: "outside.jpg",
     opts: {
       albums: ["Outside"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    name: "Little Wonder",
+    img: "earthling.jpg",
     opts: {
       albums: ["Earthling"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    name: "Looking For Satellites",
+    img: "earthling.jpg",
     opts: {
       albums: ["Earthling"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    name: "Thursday's Child",
+    img: "hours.jpg",
     opts: {
       albums: ["hours"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    name: "Something In The Air",
+    img: "hours.jpg",
     opts: {
       albums: ["hours"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    name: "Sunday",
+    img: "heathen.jpg",
     opts: {
       albums: ["Heathen"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    name: "Cactus",
+    img: "heathen.jpg",
     opts: {
       albums: ["Heathen"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    name: "New Killer Star",
+    img: "reality.jpg",
     opts: {
       albums: ["Reality"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    name: "Pablo Picasso",
+    img: "reality.jpg",
     opts: {
       albums: ["Reality"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    name: "The Next Day",
+    img: "tnd.jpg",
     opts: {
       albums: ["TND"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    name: "Dirty Boys",
+    img: "tnd.jpg",
     opts: {
       albums: ["TND"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    name: "★",
+    img: "blackstar.jpg",
     opts: {
       albums: ["blackstar"],
       bonus: [],
     },
   },
   {
-    name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    name: "'Tis A Pity She Was A Whore",
+    img: "blackstar.jpg",
     opts: {
       albums: ["blackstar"],
       bonus: [],
