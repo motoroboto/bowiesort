@@ -1,5 +1,5 @@
 // dataSetVersion = "2019-11-26"; // Change this when creating a new data set version. YYYY-MM-DD format.
-dataSetVersion = "2025-11-30";
+dataSetVersion = "2026-05-28";
 dataSet[dataSetVersion] = {};
 
 dataSet[dataSetVersion].options = [
@@ -48,19 +48,19 @@ dataSet[dataSetVersion].options = [
     name: "Expanded Releases",
     key: "bonus",
     tooltip: "Check these to include non-mainline releases.",
-    checked: false,
+    checked: true,
     sub: [
       { name: "Early Pre-Album Tracks", key: "PAT", checked: false },
-      { name: "The Gouster", key: "Gouster", checked: false },
-      { name: "Absolute Beginners", key: "AB", checked: false },
-      { name: "Labyrinth", key: "Labyrinth", checked: false },
-      { name: "Tin Machine", key: "TM", checked: false },
-      { name: "Tin Machine II", key: "TMII", checked: false },
-      { name: "The Leon Suites", key: "Leon", checked: false },
-      { name: "The Nomad Soul", key: "Nomad", checked: false },
-      { name: "Toy", key: "Toy", checked: false },
-      { name: "Never Let Me Down (2008)", key: "NLMD08", checked: false },
-      { name: "The Next Day Extra EP", key: "TNDEE", checked: false },
+      { name: "The Gouster", key: "Gouster" },
+      { name: "Absolute Beginners", key: "AB" },
+      { name: "Labyrinth", key: "Labyrinth" },
+      { name: "Tin Machine", key: "TM" },
+      { name: "Tin Machine II", key: "TMII" },
+      { name: "The Leon Suites", key: "Leon" },
+      { name: "The Nomad Soul", key: "Nomad" },
+      { name: "Toy", key: "Toy" },
+      { name: "Never Let Me Down (2008)", key: "NLMD08" },
+      { name: "The Next Day Extra EP", key: "TNDEE" },
     ],
   },
   {
@@ -96,7 +96,6 @@ dataSet[dataSetVersion].songData = [
     img: "db1.jpg",
     opts: {
       albums: ["DB1"],
-      bonus: [],
     },
   },
   {
@@ -104,7 +103,6 @@ dataSet[dataSetVersion].songData = [
     img: "db1.jpg",
     opts: {
       albums: ["DB1"],
-      bonus: [],
     },
   },
   {
@@ -112,7 +110,6 @@ dataSet[dataSetVersion].songData = [
     img: "db1.jpg",
     opts: {
       albums: ["DB1"],
-      bonus: [],
     },
   },
   {
@@ -120,7 +117,6 @@ dataSet[dataSetVersion].songData = [
     img: "db1.jpg",
     opts: {
       albums: ["DB1"],
-      bonus: [],
     },
   },
   {
@@ -128,7 +124,6 @@ dataSet[dataSetVersion].songData = [
     img: "db1.jpg",
     opts: {
       albums: ["DB1"],
-      bonus: [],
     },
   },
   {
@@ -136,7 +131,6 @@ dataSet[dataSetVersion].songData = [
     img: "db1.jpg",
     opts: {
       albums: ["DB1"],
-      bonus: [],
     },
   },
   {
@@ -144,7 +138,6 @@ dataSet[dataSetVersion].songData = [
     img: "db1.jpg",
     opts: {
       albums: ["DB1"],
-      bonus: [],
     },
   },
   {
@@ -152,7 +145,6 @@ dataSet[dataSetVersion].songData = [
     img: "db1.jpg",
     opts: {
       albums: ["DB1"],
-      bonus: [],
     },
   },
   {
@@ -160,7 +152,6 @@ dataSet[dataSetVersion].songData = [
     img: "db1.jpg",
     opts: {
       albums: ["DB1"],
-      bonus: [],
     },
   },
   {
@@ -168,7 +159,6 @@ dataSet[dataSetVersion].songData = [
     img: "db1.jpg",
     opts: {
       albums: ["DB1"],
-      bonus: [],
     },
   },
   {
@@ -176,7 +166,6 @@ dataSet[dataSetVersion].songData = [
     img: "db1.jpg",
     opts: {
       albums: ["DB1"],
-      bonus: [],
     },
   },
   {
@@ -184,7 +173,6 @@ dataSet[dataSetVersion].songData = [
     img: "db1.jpg",
     opts: {
       albums: ["DB1"],
-      bonus: [],
     },
   },
   {
@@ -192,7 +180,6 @@ dataSet[dataSetVersion].songData = [
     img: "db1.jpg",
     opts: {
       albums: ["DB1"],
-      bonus: [],
     },
   },
   {
@@ -200,15 +187,13 @@ dataSet[dataSetVersion].songData = [
     img: "db2.jpg",
     opts: {
       albums: ["DB2"],
-      bonus: [],
     },
   },
   {
     name: "Unwashed and Somewhat Slightly Dazed",
-    img: "db1.jpg",
+    img: "db2.jpg",
     opts: {
       albums: ["DB2"],
-      bonus: [],
     },
   },
   {
@@ -216,7 +201,6 @@ dataSet[dataSetVersion].songData = [
     img: "TMWStW.jpg",
     opts: {
       albums: ["TMWStW"],
-      bonus: [],
     },
   },
   {
@@ -224,375 +208,328 @@ dataSet[dataSetVersion].songData = [
     img: "TMWStW.jpg",
     opts: {
       albums: ["TMWStW"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["HD"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["HD"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["ZS"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["ZS"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["AS"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["AS"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["PU"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["PU"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["DD"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["DD"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["YA"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["YA"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["StS"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["StS"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["Low"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["Low"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["Heroes"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["Heroes"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["Lodger"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["Lodger"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["SMaSC"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["SMaSC"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["Dance"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["Dance"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["Tonight"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["Tonight"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["NLMD"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["NLMD"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["BTWN"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["BTWN"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["TBoS"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["TBoS"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["Outside"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["Outside"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["Earthling"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["Earthling"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["hours"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["hours"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["Heathen"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["Heathen"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["Reality"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["Reality"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["TND"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["TND"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 1",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["blackstar"],
-      bonus: [],
     },
   },
   {
     name: "Dummy Song 2",
-    img: "TMWStW.jpg",
+    img: "db1.jpg",
     opts: {
       albums: ["blackstar"],
-      bonus: [],
     },
   },
 ];
