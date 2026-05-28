@@ -303,7 +303,7 @@ dataSet[dataSetVersion].songData = [
   },
   {
     name: "Future Legend",
-    img: "dd.jpg",
+    img: "dd.png",
     opts: {
       albums: ["DD"],
       bonus: [],
@@ -311,7 +311,7 @@ dataSet[dataSetVersion].songData = [
   },
   {
     name: "Diamond Dogs",
-    img: "dd.jpg",
+    img: "dd.png",
     opts: {
       albums: ["DD"],
       bonus: [],
