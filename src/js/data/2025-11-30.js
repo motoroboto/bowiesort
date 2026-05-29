@@ -69,11 +69,13 @@ dataSet[dataSetVersion].options = [
     key: "duplicate",
     tooltip:
       "This will remove any songs that appear on two releases in basically the same form.",
+    checked: false,
   },
   {
     name: "Remove Covers",
     key: "cover",
     tooltip: "Check this to remove all covers.",
+    checked: false,
   },
   {
     name: "Bonus Tracks",
