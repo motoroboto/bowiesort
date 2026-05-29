@@ -46,12 +46,12 @@ dataSet[dataSetVersion].options = [
   },
   {
     name: "Expanded Releases",
-    key: "albums",
+    key: "bonus",
     tooltip: "Check these to include non-mainline releases.",
     checked: false,
     sub: [
       { name: "Early Pre-Album Tracks", key: "PAT", checked: false },
-      { name: "The Gouster", key: "Gouster", checked: false },
+      { name: "The Gouster", key: "Gouster" },
       { name: "Absolute Beginners", key: "AB", checked: false },
       { name: "Labyrinth", key: "Labyrinth", checked: false },
       { name: "Tin Machine", key: "TM", checked: false },
@@ -1840,7 +1840,7 @@ dataSet[dataSetVersion].songData = [
     },
   },
   {
-    name: "Sqgue: Nathan Adler Pt. 2",
+    name: "Segue: Nathan Adler Pt. 2",
     img: "outside.jpg",
     opts: {
       albums: ["Outside"],
