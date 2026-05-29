@@ -46,7 +46,7 @@ dataSet[dataSetVersion].options = [
   },
   {
     name: "Expanded Releases",
-    key: "bonus",
+    key: "albums",
     tooltip: "Check these to include non-mainline releases.",
     checked: false,
     sub: [
@@ -887,32 +887,32 @@ dataSet[dataSetVersion].songData = [
     name: "John, I'm Only Dancing (Again)",
     img: "gouster.jpg",
     opts: {
-      albums: [],
-      bonus: ["Gouster"],
+      albums: ["Gouster"],
+      bonus: [],
     },
   },
   {
     name: "Somebody Up There Likes Me",
     img: "gouster.jpg",
     opts: {
-      albums: [],
-      bonus: ["Gouster"],
+      albums: ["Gouster"],
+      bonus: [],
     },
   },
   {
     name: "Who Can I Be Now?",
     img: "gouster.jpg",
     opts: {
-      albums: [],
-      bonus: ["Gouster"],
+      albums: ["Gouster"],
+      bonus: [],
     },
   },
   {
     name: "Right",
     img: "gouster.jpg",
     opts: {
-      albums: [],
-      bonus: ["Gouster"],
+      albums: ["Gouster"],
+      bonus: [],
     },
   },
   {
