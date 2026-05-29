@@ -130,13 +130,10 @@ body {
 }
 
 .sorter > .text {
-  width: 180px;
-  height: 60px;
   display: none;
 }
 
 .sorter > .text > p {
-  margin: 0.5em 5px 0px;
   width: calc(100%-10px);
   text-align: center;
   font-size: 0.8em;
@@ -145,12 +142,10 @@ body {
 
 .sorter > .left {
   grid-column: 1 / 2;
-  border: 1px solid #000000;
 }
 
 .sorter > .right {
   grid-column: 3 / 4;
-  border: 1px solid #000000;
 }
 
 .options {
