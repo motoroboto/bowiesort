@@ -1,6 +1,6 @@
-/** @type {CharData} */
+/** @type {SongData} */
 let songData = []; // Initial character data set used.
-/** @type {CharData} */
+/** @type {SongData} */
 let songDataToSort = []; // Character data set after filtering.
 /** @type {Options} */
 let options = []; // Initial option set used.
@@ -212,21 +212,21 @@ function start() {
   /** Check selected options and convert to boolean array form. */
   optTaken = [];
 
-  // options.forEach((opt) => {
-  //   if ("sub" in opt) {
-  //     if (!document.getElementById(`cbgroup-${opt.key}`).checked)
-  //       optTaken.push(false);
-  //     else {
-  //       const suboptArray = opt.sub.reduce((arr, val, idx) => {
-  //         arr.push(document.getElementById(`cb-${opt.key}-${idx}`).checked);
-  //         return arr;
-  //       }, []);
-  //       optTaken.push(suboptArray);
-  //     }
-  //   } else {
-  //     optTaken.push(document.getElementById(`cb-${opt.key}`).checked);
-  //   }
-  // });
+  options.forEach((opt) => {
+    if ("sub" in opt) {
+      if (!document.getElementById(`cbgroup-${opt.key}`).checked)
+        optTaken.push(false);
+      else {
+        const suboptArray = opt.sub.reduce((arr, val, idx) => {
+          arr.push(document.getElementById(`cb-${opt.key}-${idx}`).checked);
+          return arr;
+        }, []);
+        optTaken.push(suboptArray);
+      }
+    } else {
+      optTaken.push(document.getElementById(`cb-${opt.key}`).checked);
+    }
+  });
   const includeSets = [];
   const excludeSets = [];
 
