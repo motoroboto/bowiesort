@@ -52,6 +52,7 @@ dataSet[dataSetVersion].options = [
     sub: [
       { name: "Early Pre-Album Tracks", key: "PAT", checked: false },
       { name: "The Gouster", key: "Gouster", checked: false },
+      { name: "Baal EP", key: "baal", checked: false },
       { name: "Absolute Beginners", key: "AB", checked: false },
       { name: "Labyrinth", key: "Labyrinth", checked: false },
       { name: "Tin Machine", key: "TM", checked: false },
@@ -887,7 +888,7 @@ dataSet[dataSetVersion].songData = [
     },
   },
   {
-    name: "Somebody Up There Likes Me",
+    name: "It's Gonna Be Me",
     img: "gouster.jpg",
     opts: {
       albums: [],
@@ -903,7 +904,15 @@ dataSet[dataSetVersion].songData = [
     },
   },
   {
-    name: "Right",
+    name: "Can You Hear Me (Gouster Version)",
+    img: "gouster.jpg",
+    opts: {
+      albums: [],
+      bonus: ["Gouster"],
+    },
+  },
+  {
+    name: "Right (Gouster Version)",
     img: "gouster.jpg",
     opts: {
       albums: [],
@@ -1294,6 +1303,76 @@ dataSet[dataSetVersion].songData = [
     },
   },
   {
+    name: "Baal's Hymn",
+    img: "baal.jpg",
+    opts: {
+      albums: [],
+      bonus: ["baal"],
+    },
+    cover: true,
+  },
+  {
+    name: "Remembering Marie A.",
+    img: "baal.jpg",
+    opts: {
+      albums: [],
+      bonus: ["baal"],
+    },
+    cover: true,
+  },
+  {
+    name: "Ballad of the Adventurers",
+    img: "baal.jpg",
+    opts: {
+      albums: [],
+      bonus: ["baal"],
+    },
+    cover: true,
+  },
+  {
+    name: "The Drowned Girl",
+    img: "baal.jpg",
+    opts: {
+      albums: [],
+      bonus: ["baal"],
+    },
+    cover: true,
+  },
+  {
+    name: "The Dirty Song",
+    img: "baal.jpg",
+    opts: {
+      albums: [],
+      bonus: ["baal"],
+    },
+    cover: true,
+  },
+  {
+    name: "Absolute Beginners",
+    img: "ab.jpg",
+    opts: {
+      albums: [],
+      bonus: ["AB"],
+    },
+  },
+  {
+    name: "That's Motivation",
+    img: "ab.jpg",
+    opts: {
+      albums: [],
+      bonus: ["AB"],
+    },
+  },
+  {
+    name: "Volare (Nel Blu Dipinto di Blu)",
+    img: "ab.jpg",
+    opts: {
+      albums: [],
+      bonus: ["AB"],
+    },
+    cover: true,
+  },
+  {
     name: "Modern Love",
     img: "dance.jpg",
     opts: {
@@ -1432,6 +1511,54 @@ dataSet[dataSetVersion].songData = [
     },
   },
   {
+    name: "Opening Titles (Including Underground)",
+    img: "labyrinth.jpg",
+    opts: {
+      albums: [],
+      bonus: ["Labyrinth"],
+    },
+  },
+  {
+    name: "Magic Dance",
+    img: "labyrinth.jpg",
+    opts: {
+      albums: [],
+      bonus: ["Labyrinth"],
+    },
+  },
+  {
+    name: "Chilly Down",
+    img: "labyrinth.jpg",
+    opts: {
+      albums: [],
+      bonus: ["Labyrinth"],
+    },
+  },
+  {
+    name: "As the World Falls Down",
+    img: "labyrinth.jpg",
+    opts: {
+      albums: [],
+      bonus: ["Labyrinth"],
+    },
+  },
+  {
+    name: "Within You",
+    img: "labyrinth.jpg",
+    opts: {
+      albums: [],
+      bonus: ["Labyrinth"],
+    },
+  },
+  {
+    name: "Underground",
+    img: "labyrinth.jpg",
+    opts: {
+      albums: [],
+      bonus: ["Labyrinth"],
+    },
+  },
+  {
     name: "Day-In Day-Out",
     img: "nlmd.jpg",
     opts: {
@@ -1526,6 +1653,225 @@ dataSet[dataSetVersion].songData = [
       albums: [],
       bonus: ["TM"],
     },
+  },
+  {
+    name: "Heaven's In Here",
+    img: "tm.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TM"],
+    },
+  },
+  {
+    name: "Tin Machine",
+    img: "tm.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TM"],
+    },
+  },
+  {
+    name: "Prisoner of Love",
+    img: "tm.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TM"],
+    },
+  },
+  {
+    name: "Crack City",
+    img: "tm.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TM"],
+    },
+  },
+  {
+    name: "I Can Read",
+    img: "tm.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TM"],
+    },
+  },
+  {
+    name: "Under the God",
+    img: "tm.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TM"],
+    },
+  },
+  {
+    name: "Amazing",
+    img: "tm.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TM"],
+    },
+  },
+  {
+    name: "Working Class Hero",
+    img: "tm.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TM"],
+    },
+    cover: true,
+  },
+  {
+    name: "Bus Stop",
+    img: "tm.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TM"],
+    },
+  },
+  {
+    name: "Pretty Thing",
+    img: "tm.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TM"],
+    },
+  },
+  {
+    name: "Video Crime",
+    img: "tm.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TM"],
+    },
+  },
+  {
+    name: "Run",
+    img: "tm.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TM"],
+    },
+  },
+  {
+    name: "Sacrifice Yourself",
+    img: "tm.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TM"],
+    },
+  },
+  {
+    name: "Baby Can Dance",
+    img: "tm.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TM"],
+    },
+  },
+  {
+    name: "Baby Universal",
+    img: "tmii.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TMII"],
+    },
+  },
+  {
+    name: "One Shot",
+    img: "tmii.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TMII"],
+    },
+  },
+  {
+    name: "You Belong in Rock n' Roll",
+    img: "tmii.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TMII"],
+    },
+  },
+  {
+    name: "If There Is Something",
+    img: "tmii.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TMII"],
+    },
+    cover: true,
+  },
+  {
+    name: "Amlapura",
+    img: "tmii.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TMII"],
+    },
+  },
+  {
+    name: "Betty Wrong",
+    img: "tmii.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TMII"],
+    },
+  },
+  {
+    name: "You Can't Talk",
+    img: "tmii.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TMII"],
+    },
+  },
+  {
+    name: "Stateside",
+    img: "tmii.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TMII"],
+    },
+  },
+  {
+    name: "Shopping for Girls",
+    img: "tmii.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TMII"],
+    },
+  },
+  {
+    name: "A Big Hurt",
+    img: "tmii.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TMII"],
+    },
+  },
+  {
+    name: "Sorry",
+    img: "tmii.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TMII"],
+    },
+  },
+  {
+    name: "Goodbye Mr. Ed",
+    img: "tmii.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TMII"],
+    },
+  },
+  {
+    name: "Hammerhead",
+    img: "tmii.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TMII"],
+    },
+    instrumental: true,
   },
   {
     name: "The Wedding",
@@ -2018,6 +2364,102 @@ dataSet[dataSetVersion].songData = [
     },
   },
   {
+    name: "I Dig Everything",
+    img: "toy.jpg",
+    opts: {
+      albums: [],
+      bonus: ["Toy"],
+    },
+  },
+  {
+    name: "You've Got a Habit of Leaving",
+    img: "toy.jpg",
+    opts: {
+      albums: [],
+      bonus: ["Toy"],
+    },
+  },
+  {
+    name: "The London Boys",
+    img: "toy.jpg",
+    opts: {
+      albums: [],
+      bonus: ["Toy"],
+    },
+  },
+  {
+    name: "Karma Man",
+    img: "toy.jpg",
+    opts: {
+      albums: [],
+      bonus: ["Toy"],
+    },
+  },
+  {
+    name: "Conversation Piece",
+    img: "toy.jpg",
+    opts: {
+      albums: [],
+      bonus: ["Toy"],
+    },
+  },
+  {
+    name: "Shadow Man",
+    img: "toy.jpg",
+    opts: {
+      albums: [],
+      bonus: ["Toy"],
+    },
+  },
+  {
+    name: "Let Me Sleep Beside You",
+    img: "toy.jpg",
+    opts: {
+      albums: [],
+      bonus: ["Toy"],
+    },
+  },
+  {
+    name: "Hole in the Ground",
+    img: "toy.jpg",
+    opts: {
+      albums: [],
+      bonus: ["Toy"],
+    },
+  },
+  {
+    name: "Baby Loves That Way",
+    img: "toy.jpg",
+    opts: {
+      albums: [],
+      bonus: ["Toy"],
+    },
+  },
+  {
+    name: "Can't Help Thinking About Me",
+    img: "toy.jpg",
+    opts: {
+      albums: [],
+      bonus: ["Toy"],
+    },
+  },
+  {
+    name: "Silly Boy Blue",
+    img: "toy.jpg",
+    opts: {
+      albums: [],
+      bonus: ["Toy"],
+    },
+  },
+  {
+    name: "Toy (Your Turn to Drive)",
+    img: "toy.jpg",
+    opts: {
+      albums: [],
+      bonus: ["Toy"],
+    },
+  },
+  {
     name: "Sunday",
     img: "heathen.jpg",
     opts: {
@@ -2202,6 +2644,86 @@ dataSet[dataSetVersion].songData = [
     },
   },
   {
+    name: "Day-In Day-Out [2018]",
+    img: "nlmd08.jpg",
+    opts: {
+      albums: [],
+      bonus: ["NLMD08"],
+    },
+  },
+  {
+    name: "Time Will Crawl [2018]",
+    img: "nlmd08.jpg",
+    opts: {
+      albums: [],
+      bonus: ["NLMD08"],
+    },
+  },
+  {
+    name: "Beat Of Your Drum [2018]",
+    img: "nlmd08.jpg",
+    opts: {
+      albums: [],
+      bonus: ["NLMD08"],
+    },
+  },
+  {
+    name: "Never Let Me Down [2018]",
+    img: "nlmd08.jpg",
+    opts: {
+      albums: [],
+      bonus: ["NLMD08"],
+    },
+  },
+  {
+    name: "Zeroes [2018]",
+    img: "nlmd08.jpg",
+    opts: {
+      albums: [],
+      bonus: ["NLMD08"],
+    },
+  },
+  {
+    name: "Glass Spider [2018]",
+    img: "nlmd08.jpg",
+    opts: {
+      albums: [],
+      bonus: ["NLMD08"],
+    },
+  },
+  {
+    name: "Shining Star (Makin' My Love) [2018]",
+    img: "nlmd08.jpg",
+    opts: {
+      albums: [],
+      bonus: ["NLMD08"],
+    },
+  },
+  {
+    name: "New York's In Love [2018]",
+    img: "nlmd08.jpg",
+    opts: {
+      albums: [],
+      bonus: ["NLMD08"],
+    },
+  },
+  {
+    name: "'87 and Cry [2018]",
+    img: "nlmd08.jpg",
+    opts: {
+      albums: [],
+      bonus: ["NLMD08"],
+    },
+  },
+  {
+    name: "Bang Bang [2018]",
+    img: "nlmd08.jpg",
+    opts: {
+      albums: [],
+      bonus: ["NLMD08"],
+    },
+  },
+  {
     name: "The Next Day",
     img: "tnd.jpg",
     opts: {
@@ -2314,12 +2836,83 @@ dataSet[dataSetVersion].songData = [
     },
   },
   {
-    name: "Love Is Lost (Hello Steve Reich Mix by James Murphy for the DFA)",
-    img: "tnd.jpg",
+    name: "Atomica",
+    img: "tndee.jpg",
     opts: {
-      albums: ["TND"],
-      bonus: [],
-      bside: true,
+      albums: [],
+      bonus: ["TNDEE"],
+    },
+  },
+  {
+    name: "Love Is Lost (Hello Steve Reich Mix by James Murphy for the DFA)",
+    img: "tndee.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TNDEE"],
+    },
+  },
+  {
+    name: "Plan",
+    img: "tndee.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TNDEE"],
+    },
+  },
+  {
+    name: "The Informer",
+    img: "tndee.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TNDEE"],
+    },
+  },
+  {
+    name: "I'd Rather Be High (Venetian Mix)",
+    img: "tndee.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TNDEE"],
+    },
+  },
+  {
+    name: "Like A Rocket Man",
+    img: "tndee.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TNDEE"],
+    },
+  },
+  {
+    name: "Born In A UFO",
+    img: "tndee.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TNDEE"],
+    },
+  },
+  {
+    name: "I'll Take You There",
+    img: "tndee.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TNDEE"],
+    },
+  },
+  {
+    name: "God Bless The Girl",
+    img: "tndee.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TNDEE"],
+    },
+  },
+  {
+    name: "So She",
+    img: "tndee.jpg",
+    opts: {
+      albums: [],
+      bonus: ["TNDEE"],
     },
   },
   {
