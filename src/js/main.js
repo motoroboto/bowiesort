@@ -212,22 +212,54 @@ function start() {
   /** Check selected options and convert to boolean array form. */
   optTaken = [];
 
-  options.forEach((opt) => {
+  // options.forEach((opt) => {
+  //   if ("sub" in opt) {
+  //     if (!document.getElementById(`cbgroup-${opt.key}`).checked)
+  //       optTaken.push(false);
+  //     else {
+  //       const suboptArray = opt.sub.reduce((arr, val, idx) => {
+  //         arr.push(document.getElementById(`cb-${opt.key}-${idx}`).checked);
+  //         return arr;
+  //       }, []);
+  //       optTaken.push(suboptArray);
+  //     }
+  //   } else {
+  //     optTaken.push(document.getElementById(`cb-${opt.key}`).checked);
+  //   }
+  // });
+  const includeSets = [];
+  const excludeSets = [];
+
+  options.forEach((opt, index) => {
     if ("sub" in opt) {
-      if (!document.getElementById(`cbgroup-${opt.key}`).checked)
-        optTaken.push(false);
-      else {
-        const suboptArray = opt.sub.reduce((arr, val, idx) => {
-          arr.push(document.getElementById(`cb-${opt.key}-${idx}`).checked);
+      if (optTaken[index]) {
+        const subArray = optTaken[index].reduce((arr, subBool, subIndex) => {
+          if (subBool) arr.push(options[index].sub[subIndex].key);
           return arr;
         }, []);
-        optTaken.push(suboptArray);
+        includeSets.push(
+          songDataToSort.filter(
+            (char) =>
+              opt.key in char.opts &&
+              char.opts[opt.key].some((key) => subArray.includes(key)),
+          ),
+        );
       }
-    } else {
-      optTaken.push(document.getElementById(`cb-${opt.key}`).checked);
+    } else if (optTaken[index]) {
+      excludeSets.push((char) => !char.opts[opt.key]);
     }
   });
 
+  if (includeSets.length > 0) {
+    // Union of all include filters
+    const union = new Set(includeSets.flat());
+    songDataToSort = songDataToSort.filter((char) => union.has(char));
+  }
+
+  // Exclusions (b-sdies etc) still apply on top
+  excludeSets.forEach((excludeFn) => {
+    songDataToSort = songDataToSort.filter(excludeFn);
+  });
   /** Convert boolean array form to string form. */
   optStr = "";
   suboptStr = "";
