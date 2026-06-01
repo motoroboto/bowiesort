@@ -281,7 +281,7 @@ function start() {
   });
 
   /** Filter out deselected nested criteria and remove selected criteria. */
-  options.forEach((opt, index) => {
+  // options.forEach((opt, index) => {
   //   if ("sub" in opt) {
   //     if (optTaken[index]) {
   //       const subArray = optTaken[index].reduce(
