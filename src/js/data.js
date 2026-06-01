@@ -4,7 +4,7 @@
  */
 
 /**
- * Data set. Characters will be removed from the sorting array based on selected options, working down the array.
+ * Data set. Songs will be removed from the sorting array based on selected options, working down the array.
  *
  * @type {Object.<string, {options: Options, songData: CharData}>}
  */
