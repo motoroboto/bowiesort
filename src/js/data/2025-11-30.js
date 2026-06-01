@@ -1526,6 +1526,13 @@ dataSet[dataSetVersion].songData = [
       bonus: [],
     },
   },
+  {name: "Heaven's In Here",
+    img: "tm.jpg",
+  opts: {
+    albums: [],
+    bonus: ["TM"]
+  },
+}
   {
     name: "The Wedding",
     img: "btwn.jpg",
