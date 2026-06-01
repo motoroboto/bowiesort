@@ -422,11 +422,17 @@ function start() {
     document
       .querySelectorAll(".sort.text")
       .forEach((el) => (el.style.display = "block"));
+
+    console.log("songDataToSort", songDataToSort);
+    console.log(
+      "undefined entries",
+      songDataToSort.filter((song) => song === undefined),
+    );
+    console.log("Before display", songDataToSort.length);
+
     display();
   });
 }
-console.log("Before display", songDataToSort.length);
-console.log("First song going into sorter:", songDataToSort[0].name);
 
 /** Displays the current state of the sorter. */
 function display() {
