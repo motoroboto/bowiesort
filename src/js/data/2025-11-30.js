@@ -889,32 +889,32 @@ dataSet[dataSetVersion].songData = [
     name: "John, I'm Only Dancing (Again)",
     img: "gouster.jpg",
     opts: {
-      albums: ["Gouster"],
-      bonus: [],
+      albums: [],
+      bonus: ["Gouster"],
     },
   },
   {
     name: "Somebody Up There Likes Me",
     img: "gouster.jpg",
     opts: {
-      albums: ["Gouster"],
-      bonus: [],
+      albums: [],
+      bonus: ["Gouster"],
     },
   },
   {
     name: "Who Can I Be Now?",
     img: "gouster.jpg",
     opts: {
-      albums: ["Gouster"],
-      bonus: [],
+      albums: [],
+      bonus: ["Gouster"],
     },
   },
   {
     name: "Right",
     img: "gouster.jpg",
     opts: {
-      albums: ["Gouster"],
-      bonus: [],
+      albums: [],
+      bonus: ["Gouster"],
     },
   },
   {
