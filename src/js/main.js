@@ -282,30 +282,30 @@ function start() {
 
   /** Filter out deselected nested criteria and remove selected criteria. */
   options.forEach((opt, index) => {
-    if ("sub" in opt) {
-      if (optTaken[index]) {
-        const subArray = optTaken[index].reduce(
-          (subList, subBool, subIndex) => {
-            if (subBool) {
-              subList.push(options[index].sub[subIndex].key);
-            }
-            return subList;
-          },
-          [],
-        );
-        songDataToSort = songDataToSort.filter((char) => {
-          if (!(opt.key in char.opts))
-            console.warn(`Warning: ${opt.key} not set for ${char.name}.`);
-          return (
-            opt.key in char.opts &&
-            char.opts[opt.key].some((key) => subArray.includes(key))
-          );
-        });
-      }
-    } else if (optTaken[index]) {
-      songDataToSort = songDataToSort.filter((char) => !char.opts[opt.key]);
-    }
-  });
+  //   if ("sub" in opt) {
+  //     if (optTaken[index]) {
+  //       const subArray = optTaken[index].reduce(
+  //         (subList, subBool, subIndex) => {
+  //           if (subBool) {
+  //             subList.push(options[index].sub[subIndex].key);
+  //           }
+  //           return subList;
+  //         },
+  //         [],
+  //       );
+  //       songDataToSort = songDataToSort.filter((char) => {
+  //         if (!(opt.key in char.opts))
+  //           console.warn(`Warning: ${opt.key} not set for ${char.name}.`);
+  //         return (
+  //           opt.key in char.opts &&
+  //           char.opts[opt.key].some((key) => subArray.includes(key))
+  //         );
+  //       });
+  //     }
+  //   } else if (optTaken[index]) {
+  //     songDataToSort = songDataToSort.filter((char) => !char.opts[opt.key]);
+  //   }
+  // });
 
   if (songDataToSort.length < 2) {
     alert("Cannot sort with less than two characters. Please reselect.");
