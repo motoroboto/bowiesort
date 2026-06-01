@@ -214,6 +214,16 @@ function start() {
 
   options.forEach((opt) => {
     if ("sub" in opt) {
+      opt.sub.forEach((sub, idx) => {
+        console.log(
+          `cb-${opt.key}-${idx}`,
+          document.getElementById(`cb-${opt.key}-${idx}`),
+        );
+      });
+    }
+  });
+  options.forEach((opt) => {
+    if ("sub" in opt) {
       if (!document.getElementById(`cbgroup-${opt.key}`).checked)
         optTaken.push(false);
       else {
@@ -258,12 +268,14 @@ function start() {
       excludeSets.push((char) => !char.opts[opt.key]);
     }
   });
-
+  console.log("includeSets", includeSets);
   if (includeSets.length > 0) {
     // Union of all include filters
     const union = new Set(includeSets.flat());
     songDataToSort = songDataToSort.filter((char) => union.has(char));
   }
+
+  console.log("After filter", songDataToSort.length);
 
   // Exclusions (b-sdies etc) still apply on top
   excludeSets.forEach((excludeFn) => {
@@ -288,6 +300,7 @@ function start() {
       }, "");
     }
   });
+  console.log("optTaken", JSON.stringify(optTaken));
 
   /** Filter out deselected nested criteria and remove selected criteria. */
   // options.forEach((opt, index) => {
@@ -328,11 +341,18 @@ function start() {
   }
   Math.seedrandom(timestamp);
 
+  console.log(
+    "Before shuffle:",
+    songDataToSort.length,
+    songDataToSort.map((s) => s.name),
+  );
+
   songDataToSort = songDataToSort
     .map((a) => [Math.random(), a])
     .sort((a, b) => a[0] - b[0])
     .map((a) => a[1]);
 
+  console.log("After shuffle", songDataToSort.length);
   /**
    * tiedDataList will keep a record of indexes on which characters are equal (i.e. tied)
    * to another one. recordDataList will have an interim list of sorted elements during
@@ -405,6 +425,8 @@ function start() {
     display();
   });
 }
+console.log("Before display", songDataToSort.length);
+console.log("First song going into sorter:", songDataToSort[0].name);
 
 /** Displays the current state of the sorter. */
 function display() {
