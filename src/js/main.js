@@ -231,53 +231,63 @@ function start() {
   const excludeSets = [];
 
   options.forEach((opt, index) => {
-    if ("sub" in opt) {
-      if (optTaken[index]) {
-        const subArray = optTaken[index].reduce((arr, subBool, subIndex) => {
-          if (subBool) arr.push(options[index].sub[subIndex].key);
-          return arr;
-        }, []);
-        includeSets.push(
-          songDataToSort.filter(
-            (char) =>
-              opt.key in char.opts &&
-              char.opts[opt.key].some((key) => subArray.includes(key)),
-          ),
-        );
+    if (!("sub" in opt) || !optTaken[index]) return;
+
+    optTaken[index].forEach((selected, subIndex) => {
+      if (!selected) return;
+
+      const key = opt.sub[subIndex].key;
+
+      if (opt.key === "albums") {
+        selectedAlbums.push(key);
       }
-    } else if (optTaken[index]) {
-      excludeSets.push((char) => !char.opts[opt.key]);
+
+      if (opt.key === "bonus") {
+        selectedBonus.push(key);
+      }
+    });
+
+    if (includeSets.length > 0) {
+      // Union of all include filters
+      const union = new Set(includeSets.flat());
+      songDataToSort = songDataToSort.filter((char) => union.has(char));
     }
-  });
 
-  if (includeSets.length > 0) {
-    // Union of all include filters
-    const union = new Set(includeSets.flat());
-    songDataToSort = songDataToSort.filter((char) => union.has(char));
-  }
+    // Exclusions (b-sdies etc) still apply on top
+    excludeSets.forEach((excludeFn) => {
+      songDataToSort = songDataToSort.filter(excludeFn);
+    });
+    /** Convert boolean array form to string form. */
+    optStr = "";
+    suboptStr = "";
 
-  // Exclusions (b-sdies etc) still apply on top
-  excludeSets.forEach((excludeFn) => {
-    songDataToSort = songDataToSort.filter(excludeFn);
-  });
-  /** Convert boolean array form to string form. */
-  optStr = "";
-  suboptStr = "";
-
-  optStr = optTaken
-    .map((val) => !!val)
-    .reduce((str, val) => {
-      str += val ? "1" : "0";
-      return str;
-    }, optStr);
-  optTaken.forEach((val) => {
-    if (Array.isArray(val)) {
-      // suboptStr += "|";
-      suboptStr += val.reduce((str, val) => {
+    optStr = optTaken
+      .map((val) => !!val)
+      .reduce((str, val) => {
         str += val ? "1" : "0";
         return str;
-      }, "");
-    }
+      }, optStr);
+    optTaken.forEach((val) => {
+      if (Array.isArray(val)) {
+        // suboptStr += "|";
+        suboptStr += val.reduce((str, val) => {
+          str += val ? "1" : "0";
+          return str;
+        }, "");
+      }
+    });
+  });
+
+  songDataToSort = songData.filter((song) => {
+    const matchesAlbum =
+      selectedAlbums.length > 0 &&
+      song.opts.albums?.some((a) => selectedAlbums.includes(a));
+
+    const matchesBonus =
+      selectedBonus.length > 0 &&
+      song.opts.bonus?.some((b) => selectedBonus.includes(b));
+
+    return matchesAlbum || matchesBonus;
   });
 
   /** Filter out deselected nested criteria and remove selected criteria. */
@@ -308,7 +318,7 @@ function start() {
   // });
 
   if (songDataToSort.length < 2) {
-    alert("Cannot sort with less than two characters. Please reselect.");
+    alert("Cannot sort with less than two songs. Please reselect.");
     return;
   }
 
