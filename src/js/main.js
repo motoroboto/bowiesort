@@ -69,6 +69,12 @@ function init() {
   document
     .querySelector(".right.sort.image")
     .addEventListener("click", () => pick("right"));
+  document
+    .querySelector(".left.sort.text")
+    .addEventListener("click", () => pick("left"));
+  document
+    .querySelector(".right.sort.text")
+    .addEventListener("click", () => pick("right"));
 
   document
     .querySelector(".sorting.tie.button")

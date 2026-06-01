@@ -7,7 +7,7 @@ dataSet[dataSetVersion].options = [
     name: "Filter by Albums",
     key: "albums",
     tooltip: "Check this to restrict to certain albums.",
-    checked: false,
+    checked: true,
     sub: [
       { name: "David Bowie (1967)", key: "DB1" },
       { name: "David Bowie (1969)", tooltip: "aka Space Oddity", key: "DB2" },
@@ -63,24 +63,17 @@ dataSet[dataSetVersion].options = [
       { name: "The Next Day Extra EP", key: "TNDEE", checked: false },
     ],
   },
-
   {
-    name: "Remove Duplicates",
-    key: "duplicate",
+    name: "Remove Album Bonus Tracks",
+    key: "bside",
     tooltip:
-      "This will remove any songs that appear on two releases in basically the same form.",
-    checked: false,
+      "This will toggle inclusion of all bonus tracks for any selected albums",
+    checked: true,
   },
   {
     name: "Remove Covers",
     key: "cover",
     tooltip: "Check this to remove all covers.",
-    checked: false,
-  },
-  {
-    name: "Bonus Tracks",
-    key: "bside",
-    tooltip: "This will include all bonus tracks for any slected albums",
     checked: false,
   },
   {
