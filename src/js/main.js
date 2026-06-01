@@ -227,12 +227,17 @@ function start() {
       optTaken.push(document.getElementById(`cb-${opt.key}`).checked);
     }
   });
+  console.log("optTaken", optTaken);
   const includeSets = [];
   const excludeSets = [];
 
   options.forEach((opt, index) => {
     if ("sub" in opt) {
-      if (optTaken[index]) {
+      if (
+        Array.isArray(optTaken[index])
+          ? optTaken[index].some(Boolean)
+          : optTaken[index]
+      ) {
         const subArray = optTaken[index].reduce((arr, subBool, subIndex) => {
           if (subBool) arr.push(options[index].sub[subIndex].key);
           return arr;
@@ -245,7 +250,11 @@ function start() {
           ),
         );
       }
-    } else if (optTaken[index]) {
+    } else if (
+      Array.isArray(optTaken[index])
+        ? optTaken[index].some(Boolean)
+        : optTaken[index]
+    ) {
       excludeSets.push((char) => !char.opts[opt.key]);
     }
   });
