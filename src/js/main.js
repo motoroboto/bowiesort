@@ -240,7 +240,7 @@ function start() {
     }, optStr);
   optTaken.forEach((val) => {
     if (Array.isArray(val)) {
-      suboptStr += "|";
+      // suboptStr += "|";
       suboptStr += val.reduce((str, val) => {
         str += val ? "1" : "0";
         return str;
@@ -911,7 +911,7 @@ function decodeQuery(queryString = window.location.search.slice(1)) {
           document.getElementById(`cb-${opt.key}-${subindex}`).disabled =
             optIsTrue;
         });
-        suboptDecodedIndex = suboptDecodedIndex + optIsTrue ? 1 : 0;
+        suboptDecodedIndex = suboptDecodedIndex + (optIsTrue ? 1 : 0);
       } else {
         document.getElementById(`cb-${opt.key}`).checked =
           optDecoded[index] === "1";
