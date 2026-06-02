@@ -18,7 +18,7 @@ body {
 
 .progressbar {
   position: relative;
-  width: 540px;
+  width: 100%;
   border: 1px solid #e7e7e7;
   border-radius: 1%;
   box-shadow: 0.5px 0.5px #5c5c5c;
@@ -28,7 +28,7 @@ body {
 
 .progresstext {
   position: absolute;
-  width: 525px;
+  width: 100%;
   margin: 3px 0px;
   text-align: center;
   font-size: 0.7em;
@@ -39,7 +39,6 @@ body {
   background-color: lightgreen;
   width: 0%;
 }
-
 .sorter {
   margin: 0px auto;
   display: grid;
@@ -52,7 +51,7 @@ body {
   border: 1px solid #e7e7e7;
   border-radius: 1%;
   box-shadow: 0.5px 0.5px #5c5c5c;
-  color: rgb(114, 114, 114);
+  color: rgb(0, 0, 0);
   background-color: rgba(246, 246, 246, 0.398);
   text-align: center;
   padding: 10%;
@@ -90,8 +89,6 @@ body {
   -webkit-animation: sk-scaleout 1s infinite ease-in-out;
   animation: sk-scaleout 1s infinite ease-in-out;
 }
-
-/* Animation taken from: http://tobiasahlin.com/spinkit/ */
 
 .loading.button > span {
   margin: auto auto 20%;
@@ -138,7 +135,7 @@ body {
 .sorter > .text > p {
   width: calc(100%-10px);
   text-align: center;
-  font-size: 0.8em;
+  font-size: 1em;
   line-height: 1.5em;
 }
 
@@ -292,4 +289,17 @@ a:hover {
 
 a:visited {
   color: #6600ff;
+}
+
+@media (max-width: 600px) {
+  .sorter {
+    grid-template-columns: 33% 33% 33%;
+    width: 95%;
+  }
+  .progress {
+    width: 90%;
+  }
+  .options {
+    width: 90%;
+  }
 }
